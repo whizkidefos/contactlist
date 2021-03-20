@@ -1,0 +1,32 @@
+.contacts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.person {
+    padding: 2px 16px;
+    background-color: #fff;
+    display: block;
+    margin: 20px 0;
+    border-left: 8px solid #ffffff;
+    transition: all 350ms;
+}
+
+.person:hover {
+    border-left: 8px solid #333;
+}
+
+@media (max-width: 768px) {
+    .person {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 600px) {
+    .person {
+        width: 100%;
+    }
+}
